@@ -1,0 +1,96 @@
+{
+    "id": 1,
+    "name": "Grupo de Permições",
+    "permissions": [
+        {
+            "id": 1,
+            "name": "permição grupo 1",
+            "check": false,
+            "parent": 0,
+            "children": [
+                {
+                    "id": 2,
+                    "name": "permição grupo 2",
+                    "check": false,
+                    "parent": 1,
+                    "children": []
+                },
+                {
+                    "id": 3,
+                    "name": "permição grupo 3",
+                    "check": true,
+                    "parent": 1,
+                    "children": [
+                        {
+                            "id": 4,
+                            "name": "permição grupo 4",
+                            "check": false,
+                            "parent": 2,
+                            "children": [
+                                {
+                                    "id": 9,
+                                    "name": "permição grupo 5",
+                                    "check": false,
+                                    "parent": 3,
+                                    "children": []
+                                },
+                                {
+                                    "id": 10,
+                                    "name": "permição grupo 5",
+                                    "check": false,
+                                    "parent": 3,
+                                    "children": [
+                                        {
+                                            "id": 12,
+                                            "name": "permição grupo 5",
+                                            "check": false,
+                                            "parent": 3,
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 11,
+                                    "name": "permição grupo 5",
+                                    "check": false,
+                                    "parent": 3,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "permição grupo 1",
+            "check": true,
+            "parent": 0,
+            "children": [
+                {
+                    "id": 6,
+                    "name": "permição grupo 2",
+                    "check": true,
+                    "parent": 1,
+                    "children": []
+                },
+                {
+                    "id": 7,
+                    "name": "permição grupo 3",
+                    "check": true,
+                    "parent": 1,
+                    "children": [
+                        {
+                            "id": 8,
+                            "name": "permição grupo 4",
+                            "check": false,
+                            "parent": 2,
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
