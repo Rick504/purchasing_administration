@@ -155,17 +155,19 @@ function createContent(data) {
     $(".thead-2").on('click', () => { $(".tbody-2").toggle(); $(".pagination").toggle(); })
 }
 
+
+// Hide it after 3 seconds
+// Esse hide do LoadingOverlay pode ser chamado no done da chamada Ajax, aqui ilustramos o efeito do LoadingOverlay
+$.LoadingOverlay("show");
+
+setTimeout(function(){
+    $.LoadingOverlay("hide");
+}, 3000)
+
 // Chamada AJAX
-$.ajax({
-    type: "GET",
-    url: "/assets/js/mock/user.json",
-    dataType: "json",
-  })
+$.ajax({ type: "GET", url: "/assets/js/mock/user.json", dataType: "json"})
     .done(function (data) {
       createContent(data)
       createImg(data.user.photo)
-    //   createImg(data.user.photo)
     })
-    .fail(function (error) {
-      throw error;
-    });
+     .fail(function (error) { throw error })
