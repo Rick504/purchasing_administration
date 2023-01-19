@@ -162,7 +162,7 @@ $.LoadingOverlay("show");
 
 setTimeout(function(){
     $.LoadingOverlay("hide");
-}, 3000)
+}, 200)
 
 // Chamada AJAX
 $.ajax({ type: "GET", url: "/assets/js/mock/user.json", dataType: "json"})
